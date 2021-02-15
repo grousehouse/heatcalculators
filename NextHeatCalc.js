@@ -61,8 +61,5 @@ function calculateHeat() {
   		else {
   document.getElementById("nextheatcalculation").innerHTML = "Your wolf will be " + year1 + " years(s) and " + month1 + " month(s) old!"; 
   }
-  /*else {
-  document.getElementById("nextheatcalculation").innerHTML = cooldown1; 
-  }*/
 }
 }
