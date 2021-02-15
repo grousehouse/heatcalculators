@@ -17,9 +17,11 @@ document.getElementById("defaultOpen").click();
 // Next Heat Calculator
 
 function calculateHeat() {
-  year1 = document.getElementById("year1").value;
-  month1 = document.getElementById("month1").value;
-  cooldown1 = document.getElementById("cooldown1").value/2;
+  var year1 = Number(document.getElementById("year1").value);
+  var month1 = Number(document.getElementById("month1").value);
+  var cooldown05 = Number(document.getElementById("cooldown1").value);
+  var cooldown1 = Number(cooldown05/2);
+  var i = 0.5;
 
 
 // Conditionals
@@ -42,7 +44,7 @@ function calculateHeat() {
 	else {
   month1 + cooldown1;
   	while (cooldown1 > 0) {
-    month1++;
+    month1+=i;
     cooldown1--;
     	if (month1 == 12) {
       year1++;
@@ -57,7 +59,10 @@ function calculateHeat() {
     document.getElementById("nextheatcalculation").innerHTML = "Your wolf will be " + year1 + " years(s) and " + month1 + "month(s) old. Unfortunately, female wolves cannot breed after the age of 7 years and 2 months old.";
   } 
   		else {
-  document.getElementById("nextheatcalculation").innerHTML = "Your wolf will be " + year1 + " years(s) and " + (month1) + " month(s) old!"; 
+  document.getElementById("nextheatcalculation").innerHTML = "Your wolf will be " + year1 + " years(s) and " + month1 + " month(s) old!"; 
   }
+  /*else {
+  document.getElementById("nextheatcalculation").innerHTML = cooldown1; 
+  }*/
 }
 }
