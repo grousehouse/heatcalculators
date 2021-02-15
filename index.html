@@ -1,7 +1,53 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+<!-- Tabs -->
+<div class="tab">
+  <button class="tablinks" onclick="openCalculator(event, 'NextHeat')" id="defaultOpen">Next Heat</button>
+  <button class="tablinks" onclick="openCalculator(event, 'LifetimeHeats')">Lifetime Heats</button>
+  <button class="tablinks" onclick="openCalculator(event, 'SexChange')">Unbred/Male Heat</button>
+</div>
+
+<div id="SexChange" class="tabcontent">
+  <h3>Unbred/Male Heat</h3>
+  <p>Every wolf, regardless of sex, has a heat cycle! It doesn't show on male wolves, but it coorelates to their age. Depending on their age, a male wolf might go immediately into heat when they're sex changed. This calculator will tell you if your male wolf would be in heat if you were to sex change him, or how far away his heat would be!<br>Using an aging crystal on an adolescent messes with this heat cycle.<br><br>*Button to check if they used an aging crystal and box to fill with at what age they did.*
+  <br><br>*Function returns if the wolf will be in heat or not and what day of their heat they will be on, or how many days it will be until their heat.*</p>
+</div>
+
+<!-- Next Heat Calculator -->
+<div id="NextHeat" class="tabcontent">
+  <h3>Next Heat Calculator</h3>
+  <p>This calculator will tell you what age your wolf will be when their next heat starts, based on their current age and breeding cooldown.</p>
+  <b>
+Input your wolf's information here!
+</b>
+<p>
+My wolf is <input type="number" id="year1" min="1" max ="7"> years and <input type="number" id="month1" min="0" max ="11.5" step="0.5"> months old.<br>
+They current have a <input type="number" id="cooldown1" min="1" max ="20">-rollover breeding cooldown.
+</p>
+<div class="small">
+<i>If your wolf is currently nursing, you can check exactly how many rollovers are left in their breeding cooldown by hovering over or tapping on the hourglass icon by their info on your den page! Their nesting period is included in their breeding cooldown.</i></div>
+<br><br>
+<div class="heatCalc">
+         <button onclick="calculateHeat()">Calculate Next Heat</button>
+         <p id="nextheatcalculation"><br></p>
+     </div>
+</div>
+
+<!-- Lifetime Heats Calculator -->
+<div id="LifetimeHeats" class="tabcontent">
+  <h3>Lifetime Heats Calculator</h3>
+  <p>This calculator will tell you have many heats your wolf has left before they die. This assumes that your wolf is always bred on the first day of their heat. If you plan on instant delivering every one of your wolf's litters right after they are bred, select the checkbox below that indicates this.</p> 
+  <b>
+Input your wolf's information here!
+</b>
+<p>
+My wolf is <input type="number" id="year2" min="1" max ="7"> years and <input type="number" id="month2" min="0" max ="11.5" step="0.5"> months old.<br>
+They current have a <input type="number" id="cooldown2" min="1" max ="20">-rollover breeding cooldown.<br>
+ <input type="checkbox" id="IPD">Instant deliver every litter?
+</p>
+<div class="small">
+<i>If your wolf is currently nursing, you can check exactly how many rollovers are left in their breeding cooldown by hovering over or tapping on the hourglass icon by their info on your den page! Their nesting period is included in their breeding cooldown.</i></div>
+<br><br>
+        <button onclick="lifetimeCalc()">Calculate Lifetime Heats</button> <br>
+        <p id="LifetimeHeatsCalculation"><br></p>
+</div>
+
+<!-- Unbred/Male Heat Calculator -->
