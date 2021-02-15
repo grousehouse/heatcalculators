@@ -35,7 +35,7 @@ function calculateHeat() {
   document.getElementById("nextheatcalculation").innerHTML = "Wolves cannot breed until they are 1 year old.";
 } 	else if (month1 > 12 || month1 < 0) {
   document.getElementById("nextheatcalculation").innerHTML = "Months must be between 0 and 12.";
-} 	else if (cooldown1 > 20 || cooldown1 < 1) {
+} 	else if (cooldown1 > 20 || cooldown1 < 0) {
   document.getElementById("nextheatcalculation").innerHTML = "Cooldown must be between 1 and 20.";
 }
 
