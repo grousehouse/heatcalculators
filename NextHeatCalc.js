@@ -19,8 +19,7 @@ document.getElementById("defaultOpen").click();
 function calculateHeat() {
   var year1 = Number(document.getElementById("year1").value);
   var month1 = Number(document.getElementById("month1").value);
-  var cooldown05 = Number(document.getElementById("cooldown1").value);
-  var cooldown1 = Number(cooldown05/2);
+  var cooldown1 = Number(document.getElementById("cooldown1").value);
   var i = 0.5;
 
 
