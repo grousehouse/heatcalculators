@@ -4,9 +4,14 @@
 <script src="LifetimeHeatCalc.js"></script>
 <script src="MaleHeatCalc.js"></script>
 
-Select a calculator below to start!<br><br>
 <!-- Tabs -->
 <body onload="document.getElementById('defaultOpen').click();">
+<div class="header">
+<h1>
+Wolvden Heat Calculator
+</h1>
+</div>
+<div class="tabcontainer">
 <div class="tab">
   <button class="tablinks active" onclick="openCalculator(event, 'NextHeat')" id="defaultOpen">Next Heat</button>
   <button class="tablinks" onclick="openCalculator(event, 'LifetimeHeats')">Lifetime Heats</button>
@@ -66,3 +71,5 @@ My wolf is <input type="number" id="year3" min="1" max ="7"> years and <input ty
         <button onclick="calculateMale()">Calculate Heat</button> <br>
         <p id="UnbredHeatsCalculation"><br></p>
 </div>
+</div>
+</body>
