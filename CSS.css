@@ -6,13 +6,24 @@ body {
 .header {
   background-color:#252525;
   color: #fff;
-  text-align: center;
   margin-left: 10%;
   margin-right: 10%;
   padding: 1px;
   border-radius: 20px 20px 0px 0px;
   font-size: 13px;
   max-width: 1140px;
+  overflow: hidden;
+}
+
+.header img {
+  float: left;
+  height: 60px;
+  width: auto;
+  display: inline;
+}
+
+.header h1 {
+  margin-left: 30%;
 }
 
 .tab {
