@@ -21,7 +21,7 @@ function calculateMale() {
      	if (month3 == 0) {
       document.getElementById("UnbredHeatsCalculation").innerHTML = "Your wolf will be in heat for the next 3 rollovers!";
       }
-      if (month3 == 0.5) {
+      else if (month3 == 0.5) {
       document.getElementById("UnbredHeatsCalculation").innerHTML = "Your wolf will be in heat for the next 2 rollovers!";
       } 
       else if (month3 == 1) {
