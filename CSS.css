@@ -1,28 +1,51 @@
-body {font-family: Arial;}
+body {
+  font-family: Arial;
+  background-color: black;
+}
+
+.header {
+  background-color:#252525;
+  color: #fff;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 1px;
+  border-radius: 20px 20px 0px 0px;
+  font-size: 13px;
+  max-width: 1140px;
+}
 
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  border: none;
+  background-color: #385f71;
+  color: #fff;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 1140px;
 }
 
 .tab button {
-  background-color: inherit;
-  float: left;
   border: none;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
-  font-size: 17px;
-}
-
-.tab button:hover {
-  background-color: #ddd;
+  font-size: 12px;
 }
 
 .tab button.active {
-  background-color: #ccc;
+  background-color: #264350;
+  color: #fff;
+}
+
+.tab button {
+  background-color: inherit;
+  color: #fff;
+}
+
+.tab button:hover {
+  background-color: #264350;
 }
 
 .tabcontent {
@@ -32,6 +55,41 @@ body {font-family: Arial;}
   border-top: none;
 }
 
+div#NextHeat {
+  margin-left: 10%;
+  margin-right: 10%;
+  border: none;
+  background-color: #fff;
+  max-width: 1140px;
+}
+
+div#LifetimeHeats {
+  margin-left: 10%;
+  margin-right: 10%;
+  border: none;
+  background-color: #fff;
+  max-width: 1140px;
+}
+
+div#SexChange {
+  margin-left: 10%;
+  margin-right: 10%;
+  border: none;
+  background-color: #fff;
+  max-width: 1140px;
+}
+
 .small {
   font-size: 11px;
+}
+
+.footer {
+  background-color: #252525;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  max-width: 1140px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 0px 0px 20px 20px;
 }
