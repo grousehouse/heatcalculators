@@ -3,9 +3,9 @@
 //Initialize
 
 function calculateLifetime() {
-  var year2 = document.getElementById("year2").value;
-  var month2 = document.getElementById("month2").value;
-  var cooldown2 = document.getElementById("cooldown2").value;
+  var year2 = Number(document.getElementById("year2").value);
+  var month2 = Number(document.getElementById("month2").value);
+  var cooldown2 = Number(document.getElementById("cooldown2").value);
   var i = 0.5;
   var totalheats = 0;
   var iterate = true;
