@@ -1,20 +1,9 @@
-<link rel="stylesheet" type="text/css" href="CSS.css">
-<script src="Tabs.js"></script>
-<script src="NextHeatCalc.js"></script>
-<script src="LifetimeHeatCalc.js"></script>
-
 Select a calculator below to start!<br><br>
 <!-- Tabs -->
 <div class="tab">
   <button class="tablinks" onclick="openCalculator(event, 'NextHeat')" id="defaultOpen">Next Heat</button>
   <button class="tablinks" onclick="openCalculator(event, 'LifetimeHeats')">Lifetime Heats</button>
   <button class="tablinks" onclick="openCalculator(event, 'SexChange')">Unbred/Male Heat</button>
-</div>
-
-<div id="SexChange" class="tabcontent">
-  <h3>Unbred/Male Heat</h3>
-  <p>Every wolf, regardless of sex, has a heat cycle! It doesn't show on male wolves, but it coorelates to their age. Depending on their age, a male wolf might go immediately into heat when they're sex changed. This calculator will tell you if your male wolf would be in heat if you were to sex change him, or how far away his heat would be!<br>Using an aging crystal on an adolescent messes with this heat cycle.<br><br>*Button to check if they used an aging crystal and box to fill with at what age they did.*
-  <br><br>*Function returns if the wolf will be in heat or not and what day of their heat they will be on, or how many days it will be until their heat.*</p>
 </div>
 
 <!-- Next Heat Calculator -->
@@ -52,8 +41,21 @@ They current have a <input type="number" id="cooldown2" min="1" max ="20">-rollo
 <div class="small">
 <i>If your wolf is currently nursing, you can check exactly how many rollovers are left in their breeding cooldown by hovering over or tapping on the hourglass icon by their info on your den page! Their nesting period is included in their breeding cooldown.</i></div>
 <br><br>
-        <button onclick="lifetimeCalc()">Calculate Lifetime Heats</button> <br>
+        <button onclick="calculateLifetime()">Calculate Lifetime Heats</button> <br>
         <p id="LifetimeHeatsCalculation"><br></p>
 </div>
 
 <!-- Unbred/Male Heat Calculator -->
+<div id="SexChange" class="tabcontent">
+  <h3>Lifetime Heats Calculator</h3>
+  <p>Every wolf, regardless of sex, has a heat cycle! It doesn't show on male wolves, but it coorelates to their age. Depending on their age, a male wolf might go immediately into heat when they're sex changed. This calculator will tell you if your male wolf would be in heat if you were to sex change them, or how far away their heat would be!<br>Using an aging crystal on a pup or adolescent messes with this heat cycle. Aging crystal functionality coming soon!<br></p> 
+  <b>
+Input your wolf's information here!
+</b>
+<p>
+My wolf is <input type="number" id="year3" min="1" max ="7"> years and <input type="number" id="month3" min="0" max ="11.5" step="0.5"> months old.<br>
+</p>
+<br><br>
+        <button onclick="calculateUnbred()">Calculate Heat</button> <br>
+        <p id="UnbredHeatsCalculation"><br></p>
+</div>
