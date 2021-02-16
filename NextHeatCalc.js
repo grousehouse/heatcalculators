@@ -37,7 +37,7 @@ function calculateHeat() {
         month1 = 0.5;
       }
     }
-    if (year1 >= 7 && months1 >= 2.5) {
+    if (year1 >= 7 && month1 >= 2.5) {
       document.getElementById("nextheatcalculation").innerHTML = "Your wolf will be " + year1 + " years(s) and " + month1 + "month(s) old. Unfortunately, female wolves cannot breed after the age of 7 years and 2 months old.";
     } else {
       document.getElementById("nextheatcalculation").innerHTML = "Your wolf will be " + year1 + " years(s) and " + month1 + " month(s) old!";

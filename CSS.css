@@ -55,6 +55,10 @@ body {
   border-top: none;
 }
 
+h2 {
+  font-size: 15px;
+}
+
 h3 {
   font-size: 14px;
 }
