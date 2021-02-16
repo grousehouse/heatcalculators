@@ -3,6 +3,10 @@ body {
   background-image: url("https://cdn.discordapp.com/attachments/755155800212767092/811302118115377192/unknown.png");
 }
 
+a {
+  color: #5388a0;
+}
+
 .header {
   background-color:#252525;
   color: #fff;
@@ -23,7 +27,7 @@ body {
 }
 
 .header h1 {
-  margin-left: 34%;
+  margin-left: 30%;
 }
 
 .tab {
@@ -109,7 +113,7 @@ div#SexChange {
 .footer {
   background-color: #252525;
   padding: 10px;
-  text-align: center;
+  text-align: left;
   color: #fff;
   max-width: 1140px;
   margin-left: 10%;
