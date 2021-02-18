@@ -44,7 +44,7 @@ function calculateLifetime() {
         if (document.getElementById("IPD").checked == true) {
           cooldown2 = 20;
         } else {
-          cooldown2 = 23;
+          cooldown2 = 24;
         }
       }
     }
