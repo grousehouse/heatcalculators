@@ -36,7 +36,7 @@ function calculateLifetime() {
           month2 = 0;
         }
       }
-      if (year2 >= 7 && month2 >= 2) {
+      if (year2 >= 8 || year2 >= 7 && month2 >= 2) {
         document.getElementById("LifetimeHeatsCalculation").innerHTML = "Your wolf has " + totalheats + " heat(s) left.";
         iterate = false
       } else {
