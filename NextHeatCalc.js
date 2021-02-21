@@ -1,15 +1,8 @@
-// Next Heat Calculator
-
-// Initialize 
-
 function calculateHeat() {
   var year1 = Number(document.getElementById("year1").value);
   var month1 = Number(document.getElementById("month1").value);
   var cooldown1 = Number(document.getElementById("cooldown1").value);
   var i = 0.5;
-
-
-  // Conditionals
 
   if (year1 == 7 && month1 > 2) {
     document.getElementById("nextheatcalculation").innerHTML = "Female wolves cannot be bred past the age of 7 years and 2 months.";
@@ -23,7 +16,6 @@ function calculateHeat() {
     document.getElementById("nextheatcalculation").innerHTML = "Cooldown must be between 1 and 20.";
   }
 
-  // Calculation
   else {
     month1 + cooldown1;
     while (cooldown1 > 0) {

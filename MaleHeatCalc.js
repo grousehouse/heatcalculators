@@ -1,7 +1,3 @@
-// Unbred/Male Heat Calculator
-
-// Initiate
-
 function calculateMale() {
   var year3 = Number(document.getElementById("year3").value);
   var month3 = Number(document.getElementById("month3").value);
@@ -15,7 +11,6 @@ function calculateMale() {
     document.getElementById("UnbredHeatsCalculation").innerHTML = "Months must be between 0 and 12.";
   }
 
-  // References
   else {
     if (year3 == 1 || year3 == 2 || year3 == 3 || year3 == 4 || year3 == 5 || year3 == 6 || year3 == 7) {
      	if (month3 == 0) {
