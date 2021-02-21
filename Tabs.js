@@ -12,4 +12,4 @@ function openCalculator(evt, calculator) {
   evt.currentTarget.className += " active";
 }
 
-document.getElementById("defulatOpen").click();
+document.getElementById("defaultOpen").click();
