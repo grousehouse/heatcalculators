@@ -97,6 +97,9 @@ function calculateMale() {
   } else if (month3 > 12 || month3 < 0) {
     document.getElementById("UnbredHeatsCalculation").innerHTML = "Months must be between 0 and 12.";
   }
+    else if (year3 >= 7 && month3 >= 2.5) {
+    document.getElementById("UnbredHeatsCalculation").innerHTML = "Female wolves become infertile after the age of 7 years and 2 months.";
+  }
 
   else {
     if (year3 == 1 || year3 == 2 || year3 == 3 || year3 == 4 || year3 == 5 || year3 == 6 || year3 == 7) {
