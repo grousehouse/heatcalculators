@@ -13,78 +13,41 @@ function calculateMale() {
 
   else {
     if (year3 == 1 || year3 == 2 || year3 == 3 || year3 == 4 || year3 == 5 || year3 == 6 || year3 == 7) {
-     	if (month3 == 0) {
+     	if (month3 == 0 || month3 == 6) {
       document.getElementById("UnbredHeatsCalculation").innerHTML = "Your wolf will be in heat for the next 3 rollovers!";
       }
-      else if (month3 == 0.5) {
+      else if (month3 == 0.5 || month3 == 6.5) {
       document.getElementById("UnbredHeatsCalculation").innerHTML = "Your wolf will be in heat for the next 2 rollovers!";
       } 
-      else if (month3 == 1) {
+      else if (month3 == 1 || month3 == 7) {
       document.getElementById("UnbredHeatsCalculation").innerHTML = "Your wolf will be in heat for the next 1 rollovers!";
       } 
-      else if (month3 == 1.5) {
+      else if (month3 == 1.5 || month3 == 7.5) {
       document.getElementById("UnbredHeatsCalculation").innerHTML = "Today is the last day of this wolf's heat!";
       } 
-      else if (month3 == 2) {
+      else if (month3 == 2 || month3 == 8) {
       document.getElementById("UnbredHeatsCalculation").innerHTML = "This wolf is not in heat, but will be in 8 rollovers!";
       } 
-      else if (month3 == 2.5) {
+      else if (month3 == 2.5 || month3 == 8.5) {
       document.getElementById("UnbredHeatsCalculation").innerHTML = "This wolf is not in heat, but will be in 7 rollovers!";
       } 
-      else if (month3 == 3) {
+      else if (month3 == 3 || month3 == 9) {
       document.getElementById("UnbredHeatsCalculation").innerHTML = "This wolf is not in heat, but will be in 6 rollovers!";
       } 
-      else if (month3 == 3.5) {
+      else if (month3 == 3.5 || month3 == 9.5) {
       document.getElementById("UnbredHeatsCalculation").innerHTML = "This wolf is not in heat, but will be in 5 rollovers!";
       } 
-      else if (month3 == 4) {
+      else if (month3 == 4 || month3 == 10) {
       document.getElementById("UnbredHeatsCalculation").innerHTML = "This wolf is not in heat, but will be in 4 rollovers!";
       } 
-      else if (month3 == 4.5) {
+      else if (month3 == 4.5 || month3 == 10.5) {
       document.getElementById("UnbredHeatsCalculation").innerHTML = "This wolf is not in heat, but will be in 3 rollovers!";
       } 
-      else if (month3 == 5) {
+      else if (month3 == 5 || month3 == 11) {
       document.getElementById("UnbredHeatsCalculation").innerHTML = "This wolf is not in heat, but will be in 2 rollovers!";
       } 
-      else if (month3 == 5.5) {
-      document.getElementById("UnbredHeatsCalculation").innerHTML = "This wolf is not in heat, but will be in 1 rollovers!";
-      } 
-      else if (month3 == 6) {
-      document.getElementById("UnbredHeatsCalculation").innerHTML = "Your wolf will be in heat for the next 3 rollovers!";
-      } 
-      else if (month3 == 6.5) {
-      document.getElementById("UnbredHeatsCalculation").innerHTML = "Your wolf will be in heat for the next 2 rollovers!";
-      } 
-      else if (month3 == 7) {
-      document.getElementById("UnbredHeatsCalculation").innerHTML = "Your wolf will be in heat for the next 1 rollovers!";
-      } 
-      else if (month3 == 7.5) {
-      document.getElementById("UnbredHeatsCalculation").innerHTML = "Today is the last day of this wolf's heat!";
-      } 
-      else if (month3 == 8) {
-      document.getElementById("UnbredHeatsCalculation").innerHTML = "This wolf is not in heat, but will be in 8 rollovers!";
-      }
-      else if (month3 == 8.5) {
-      document.getElementById("UnbredHeatsCalculation").innerHTML = "This wolf is not in heat, but will be in 7 rollovers!";
-      }
-      else if (month3 == 9) {
-      document.getElementById("UnbredHeatsCalculation").innerHTML = "This wolf is not in heat, but will be in 6 rollovers!";
-      }
-      else if (month3 == 9.5) {
-      document.getElementById("UnbredHeatsCalculation").innerHTML = "This wolf is not in heat, but will be in 5 rollovers!";
-      }
-      else if (month3 == 10) {
-      document.getElementById("UnbredHeatsCalculation").innerHTML = "This wolf is not in heat, but will be in 4 rollovers!";
-      }
-      else if (month3 == 10.5) {
-      document.getElementById("UnbredHeatsCalculation").innerHTML = "This wolf is not in heat, but will be in 3 rollovers!";
-      }
-      else if (month3 == 11) {
-      document.getElementById("UnbredHeatsCalculation").innerHTML = "This wolf is not in heat, but will be in 2 rollovers!";
-      }
-      else if (month3 == 11.5) {
+      else if (month3 == 5.5 || month3 == 11.5) {
       document.getElementById("UnbredHeatsCalculation").innerHTML = "This wolf is not in heat, but will be in 1 rollovers!";
       }
-    }
   }
 }
