@@ -137,5 +137,6 @@ function calculateMale() {
       document.getElementById("UnbredHeatsCalculation").innerHTML = "This wolf is not in heat, but will be in 1 rollovers!";
       }
   }
+  }
 }
 
