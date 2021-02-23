@@ -1,2 +1,2 @@
-# grousehouse.github.io/heatcalculator
+# grousehouse.github.io/heatcalculators
 
